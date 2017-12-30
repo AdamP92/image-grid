@@ -16,14 +16,14 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
 body {
   text-align: center;
-  display: block;
   margin: 0;
 }
 
 img {
-  display: inline-block;
+  display: block;
   float: left;
   width: 100%;
 }
@@ -31,7 +31,7 @@ img {
 @media only screen and (min-width: 20em) {
 
   img:first-child {
-    width: 100%
+    width: 100%;
   }
 
   img:nth-child(2), img:last-child {
@@ -42,7 +42,7 @@ img {
 @media only screen and (min-width: 25em) {
 
   img {
-    width: 50%
+    width: 50%;
   }
 
   img:first-child {
@@ -65,11 +65,21 @@ img {
   }
 
   img:last-child {
-  display: none;
+    display: none;
   }
 }
 
 @media only screen and (min-width: 60em) {
 
+  img {
+    width: 33.3333%;
+  }
 
+  img:first-child {
+    width: 66.6666%;
+  }
+
+  img:last-child {
+    display: inline-block;
+  }
 }
